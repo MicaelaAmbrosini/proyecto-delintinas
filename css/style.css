@@ -1,0 +1,152 @@
+/* Paleta
+#E7D4B4 beige
+#553A26 marron
+#92B5C3 celeste
+#F6F6F6 tiza */
+
+ /* Tipografia  */
+
+ @import url('https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+ /* font-family: "Spectral SC", serif; */
+
+/* Estilos generales */
+
+main{
+    background-image: url(../archivos/fondo90.png);
+    width: 2050px;
+}
+
+p{
+    font-family: "Spectral SC", serif;
+    line-height: 0.5;
+}
+/* Estilo Header--------------------------------------*/
+header{
+    background-color:#e9d1b5 ;
+    width: 2050px;
+    height: 200px;
+}
+h1{
+    color: #553A26;
+    text-decoration: underline;
+    font-size: 3.2rem;
+    font-family: "Spectral SC", serif;
+}
+h2{
+    font-size: 2.2rem;
+    color: #553A26;
+    font-family: "Spectral SC", serif;
+}
+.logo{
+    width: 100px;
+    height: auto;
+    display: block;
+    margin:auto ;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav a{
+    font-size: 1.2rem;
+    color: #553A26;
+    text-decoration: none;
+    font-family: "Spectral SC", serif;
+}
+
+/* Estilo main --------------*/
+/* Index ----*/
+
+.panaderia{
+    width: 500px;
+    height: auto;
+}
+
+#sobre_nosotros{
+    width: 2050px;
+    height: 400px;
+    font-size: 1.5rem;
+}
+#sobre_nosotros p{
+    line-height: 1;
+}
+
+/* Productos ----*/
+
+h3{
+    font-family: "Spectral SC", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2.2rem;
+    text-align: center;
+}
+h4{
+    font-family: "Spectral SC", serif;
+    font-size: 2rem;
+}
+h5{
+    font-family: "Spectral SC", serif;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
+
+
+.matilda{
+    width: 400px;
+    height: auto;
+}
+.lemonpie{
+    width: 400px;
+    height: auto;
+}
+.chipa{
+    width: 400px;
+    height: auto;
+}
+.pastelitos{
+    width: 400px;
+    height: auto;
+}
+
+/* Ubicaciones ----*/
+.formulario{
+    background-color:#92b5c3c3 ;
+    width: 2050px;
+    font-family: "Spectral SC", serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+/* Estilo footer */
+footer{
+    background-color:#553A26 ;
+    width: 2050px;
+    height: 200px;
+}
+
+footer p{
+    color:#F6F6F6 ;
+    line-height: 1;
+}
+
+.facebook{
+    width: 50px;
+    height: auto;
+}
+.instagram{
+    width: 50px;
+    height: auto;
+}
+.mail{
+    width: 50px;
+    height: auto;
+}
+.wpp{
+    width: 50px;
+    height: auto;
+}
