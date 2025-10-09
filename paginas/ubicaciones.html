@@ -37,21 +37,32 @@
         </div>
 <!-- Formulario -->
         <div class="formulario">
-            <h3>Dejanos tu opinion</h3>
-            <form action="">
-            <label for="Nombre">Nombre</label>
-            <input type="text" name="" id="Nombre">
-
-            <label for="¿Nos seguis en redes?">¿Nos seguis en redes?</label>
-            <label for="Si">Si</label>
-            <input type="radio" name="" id="Si">
-            <label for="No">No</label>
-            <input type="radio" name="" id="No">
-            
-            <label for="Comentario">Comentario</label>
-            <textarea name="Comentario" id="Comentario" cols="40" rows="5"></textarea>
-
-            <input type="submit" value="Enviar">
+           <h3>Dejanos tu opinion</h3>
+           <form action="">
+                <div class="form-floating mb-3">
+                    <input type="name" class="form-control" id="floatingInput" placeholder="Tu Nombre">
+                    <label for="floatingInput">Nombre</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option selected>Selecciona una opcion</option>
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
+                    </select>
+                    <label for="floatingSelect">¿Nos seguis en redes sociales?</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Deja tu comentario" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Comentario</label>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+                <!-- <input type="submit" value="Enviar"> -->
             </form>
         </div>
 
