@@ -20,7 +20,7 @@ main{
 }
 
 p{
-    font-family: "Spectral SC", serif;
+    font-family: "Merriweather", serif;
     line-height: 0.5;
 }
 /* Estilo Header--------------------------------------*/
@@ -113,6 +113,37 @@ nav a{
 
 /* Productos ----*/
 
+.art_tortas{
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    grid-template-rows: 10% 60% 20%;
+    grid-template-areas:
+    "torta titulo_torta titulo_torta"
+    "torta texto_torta texto_torta"
+    "torta texto_cierre precio";
+    font-size: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    margin: 10px 10px 10px 10px;
+}
+.titulo_torta{
+    grid-area: titulo_torta;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 5%;
+}
+.texto_torta{
+    grid-area: texto_torta;
+    line-height: 1.5;
+}
+.texto_cierre{
+    grid-area: texto_cierre;
+}
+.precio{
+    grid-area: precio;
+    font-size: 5rem;
+}
 h3{
     font-family: "Spectral SC", serif;
     font-weight: 800;
@@ -122,7 +153,8 @@ h3{
 }
 h4{
     font-family: "Spectral SC", serif;
-    font-size: 2rem;
+    font-size: 4rem;
+    margin-left:100px;
 }
 h5{
     font-family: "Spectral SC", serif;
@@ -133,22 +165,12 @@ h5{
 }
 
 
-.matilda{
-    width: 400px;
-    height: auto;
+.torta{
+    width: 100%;
+    grid-area: torta;
+    padding: 5%;
 }
-.lemonpie{
-    width: 400px;
-    height: auto;
-}
-.chipa{
-    width: 400px;
-    height: auto;
-}
-.pastelitos{
-    width: 400px;
-    height: auto;
-}
+
 
 /* Ubicaciones ----*/
 .formulario{
@@ -166,6 +188,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     height: auto;
     padding-left: 50px;
 }

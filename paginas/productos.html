@@ -29,50 +29,69 @@
 <!-- Cuerpo de la pagina -->
     <main>
         <h3>Conoce nuestras Delicias Argentinas</h3>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../archivos/chipa2.jpg" class="d-block w-100" alt="Chipa">
+                </div>
+                <div class="carousel-item">
+                    <img src="../archivos/lemon_pie2.jpg" class="d-block w-100" alt="Lemon pie">
+                </div>
+                <div class="carousel-item">
+                    <img src="../archivos/matilda.jpg" class="d-block w-100" alt="Matilda">
+                </div>
+                <div class="carousel-item">
+                    <img src="../archivos/pastafrola.jpg" class="d-block w-100" alt="Matilda">
+                </div>
+                <div class="carousel-item">
+                    <img src="../archivos/rogel.jpg" class="d-block w-100" alt="Matilda">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
         <!-- Seccion tortas -->
         <section>
             <h4>Tortas</h4>
-            <article>
-                <h5>Torta Matilda</h5>
-                <p>¿Te acordás de la torta de Matilda? 🍫🎬</p>
-                  <p> Esa que Bruce se comía con culpa… bueno, esta es igualita pero sin culpa y con muuucho más chocolate 😍</p>
-                   <p>Pura humedad, rellena hasta el alma y coronada con bombones 🍫🍫 </p>
-                  <p> Una torta que no se comparte: se defiende con tenedor ⚔️🍰</p>
-                   <p>¿Se te hizo agua la boca? 🤤</p> <p>Encargala para tu cumple, evento o simplemente porque sí.
-                   <h5>€35</h5>
-                   <img class="matilda" src="../archivos/matilda.jpg" alt="Torta Matilda">
-                </p>
+            <article class="art_tortas">
+                <h5 class="titulo_torta">Torta Matilda</h5>
+                <p class="texto_torta">¿Te acordás de la torta de Matilda? 🍫🎬Esa que Bruce se comía con culpa… bueno, esta es igualita pero sin culpa y con muuucho más chocolate 😍 Pura humedad, rellena hasta el alma y coronada con bombones 🍫🍫 Una torta que no se comparte: se defiende con tenedor ⚔️🍰 ¿Se te hizo agua la boca? 🤤</p>
+                <p class="texto_cierre">Encargala para tu cumple, evento o simplemente porque sí.</p>
+                <h5 class="precio">€35</h5>
+                <img class="torta" src="../archivos/matilda.jpg" alt="Torta Matilda">
+                
             </article>
-            <article>
-                <h5>Lemon Pie</h5>
-                <p>Hay postres que no necesitan presentación… pero este lemon pie se merece un poema 🍋✨</p>
-                <p>Masa quebrada artesanal, relleno suave con el equilibrio justo entre dulce y ácido, y una nube de merengue dorado que se derrite en la boca.</p>
-                <p>Perfecto para acompañar un café, una buena charla o simplemente un antojo con estilo ☕🍰</p>
-                <p>Encargalo para tu próxima reunión, evento o para mimarte como te lo merecés.
-                <h5>€25</h5>
-                <img class="lemonpie" src="../archivos/lemon_pie2.jpg" alt="Lemon Pie">
-                </p>
+            <article class="art_tortas">
+                <h5 class="titulo_torta">Lemon Pie</h5>
+                <p class="texto_torta">Hay postres que no necesitan presentación… pero este lemon pie se merece un poema 🍋✨ Masa quebrada artesanal, relleno suave con el equilibrio justo entre dulce y ácido, y una nube de merengue dorado que se derrite en la boca. Perfecto para acompañar un café, una buena charla o simplemente un antojo con estilo ☕🍰</p>
+                <p class="texto_cierre">Encargalo para tu próxima reunión, evento o para mimarte como te lo merecés.</p>
+                <h5 class="precio">€25</h5>
+                <img class="torta" src="../archivos/lemon_pie2.jpg" alt="Lemon Pie">
             </article>
         </section>
         <!-- Seccion panaderia -->
         <section>
            <h4>Panaderia</h4> 
-           <article>
-            <h5>Chipa</h5>
-            <p>Chipa, un clásico de siempre.</p>
-            <p>¿Antojo de algo bien rico y con mucho queso? 🧀🔥</p>
-            <p>Un clásico infalible que acompaña cualquier momento, meriendas, cenas o picadas.</p>
-            <p>Encarga los tuyos, no te quedes con el antojo.😋</p>
-            <h5>€15 por docena</h5>
-            <img class="chipa" src="../archivos/chipa2.jpg" alt="Chipa">
+           <article class="art_tortas">
+            <h5 class="titulo_torta">Chipa</h5>
+            <p class="texto_torta">Chipa, un clásico de siempre. ¿Antojo de algo bien rico y con mucho queso? 🧀🔥Un clásico infalible que acompaña cualquier momento, meriendas, cenas o picadas.</p>
+            <p class="texto_cierre">Encarga los tuyos, no te quedes con el antojo.😋</p>
+            <h5 class="precio">€15</h5>
+            <img class="torta" src="../archivos/chipa2.jpg" alt="Chipa">
            </article>
-           <article>
-            <h4>Pastelitos</h4>
-            <p>Crujientes por fuera, suaves por dentro, con dulce de membrillo y bañados en almíbar… como los de las fiestas patrias, pero todo el año.</p>
-            <p>Ideales para el mate, para compartir en familia o para darte ese gusto que sabe a casa.</p>
-            <p>Encargá los tuyos y llevá un pedacito de tradición en cada bocado 🧉</p>
-            <h5>€20 por docena</h5>
-            <img class="pastelitos" src="../archivos/pastelitos.jpg" alt="Pastelitos">
+           <article class="art_tortas">
+            <h5 class="titulo_torta">Pastelitos</h5>
+            <p class="texto_torta">Crujientes por fuera, suaves por dentro, con dulce de membrillo y bañados en almíbar… como los de las fiestas patrias, pero todo el año. Ideales para el mate, para compartir en familia o para darte ese gusto que sabe a casa.</p>
+            <p class="texto_cierre">Encargá los tuyos y llevá un pedacito de tradición en cada bocado 🧉</p>
+            <h5 class="precio">€20</h5>
+            <img class="torta" src="../archivos/pastelitos.jpg" alt="Pastelitos">
            </article>
         </section>
 
