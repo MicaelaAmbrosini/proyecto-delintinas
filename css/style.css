@@ -267,6 +267,9 @@ footer p{
     .despedida{
         font-size: 150%;
     }
+    h4{
+        margin-left: 10px;
+    }
 
     /* Productos */
     .art_tortas{
