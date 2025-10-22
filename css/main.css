@@ -80,6 +80,10 @@ main #sobre_nosotros {
 main #sobre_nosotros .panaderia {
   width: 100%;
   grid-area: panaderia;
+  transition: 3s;
+}
+main #sobre_nosotros .panaderia:hover {
+  transform: scale(1.2, 1.2);
 }
 main #sobre_nosotros .titulo_seccion {
   grid-area: titulo_seccion;
@@ -99,6 +103,10 @@ main #sobre_nosotros .despedida {
 main #sobre_nosotros .manga {
   grid-area: manga;
   width: 100%;
+  transition: 3s;
+}
+main #sobre_nosotros .manga:hover {
+  transform: scale(1.2, 1.2);
 }
 main #sobre_nosotros p {
   line-height: 1;

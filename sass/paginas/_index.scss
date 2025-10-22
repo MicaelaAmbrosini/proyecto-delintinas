@@ -26,6 +26,10 @@ main{
         .panaderia{
             width: 100%;
             grid-area: panaderia;
+            transition: 3s;
+            &:hover{
+                transform: scale(1.2, 1.2);
+            }
         }
         .titulo_seccion {
             grid-area: titulo_seccion;
@@ -45,6 +49,10 @@ main{
         .manga{
             grid-area: manga;
             width: 100%;
+            transition: 3s;
+            &:hover{
+                transform: scale(1.2, 1.2);
+            }
         }
         p{
             line-height: 1;
