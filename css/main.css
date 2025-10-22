@@ -128,7 +128,7 @@ body main section h3 {
 body main section .art_tortas {
   display: grid;
   grid-template-columns: 30% 50% 20%;
-  grid-template-rows: 10% 60% 20%;
+  grid-template-rows: 10% 60% 30%;
   grid-template-areas: "torta titulo_torta titulo_torta" "torta texto_torta texto_torta" "torta texto_cierre precio";
   font-size: 1.5rem;
   justify-content: space-between;
