@@ -6,8 +6,10 @@
     <title>Delintinas</title>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- enlace a estilo -->
- <link rel="stylesheet" href="../css/style.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- sass -->
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <!-- Encabezado del sitio -->
@@ -18,17 +20,31 @@
             <h1>Delintinas</h1>
         </div>
         <!-- Menu de navegacion -->
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="../paginas/ubicaciones.html">Ubicaciones</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid barra_nav">
+                <a class="navbar-brand boton_inicio" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active"  aria-current="page" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ubicaciones.html">Ubicaciones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 <!-- Cuerpo de la pagina -->
     <main>
-        <h3>Conoce nuestras Delicias Argentinas</h3>
+        <h2 class="titulo_productos animate__animated animate__zoomIn animate__infinite animate__slower">Conoce nuestras Delicias Argentinas</h2>
         <section id="carouselExampleAutoplaying" class="carousel slide w-75 container" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -56,38 +72,38 @@
 
         <!-- Seccion tortas -->
         <section>
-            <h4>Tortas</h4>
+            <h3>Tortas</h3>
             <article class="art_tortas">
-                <h5 class="titulo_torta">Torta Matilda</h5>
+                <h4 class="titulo_torta">Torta Matilda</h4>
                 <p class="texto_torta">¿Te acordás de la torta de Matilda? 🍫🎬Esa que Bruce se comía con culpa… bueno, esta es igualita pero sin culpa y con muuucho más chocolate 😍 Pura humedad, rellena hasta el alma y coronada con bombones 🍫🍫 Una torta que no se comparte: se defiende con tenedor ⚔️🍰 ¿Se te hizo agua la boca? 🤤</p>
                 <p class="texto_cierre">Encargala para tu cumple, evento o simplemente porque sí.</p>
-                <h5 class="precio">€35</h5>
+                <h4 class="precio">€35</h4>
                 <img class="torta" src="../archivos/matilda.jpg" alt="Torta Matilda">
                 
             </article>
             <article class="art_tortas">
-                <h5 class="titulo_torta">Lemon Pie</h5>
+                <h4 class="titulo_torta">Lemon Pie</h4>
                 <p class="texto_torta">Hay postres que no necesitan presentación… pero este lemon pie se merece un poema 🍋✨ Masa quebrada artesanal, relleno suave con el equilibrio justo entre dulce y ácido, y una nube de merengue dorado que se derrite en la boca. Perfecto para acompañar un café, una buena charla o simplemente un antojo con estilo ☕🍰</p>
                 <p class="texto_cierre">Encargalo para tu próxima reunión, evento o para mimarte como te lo merecés.</p>
-                <h5 class="precio">€25</h5>
+                <h4 class="precio">€25</h4>
                 <img class="torta" src="../archivos/lemon_pie2.jpg" alt="Lemon Pie">
             </article>
         </section>
         <!-- Seccion panaderia -->
         <section>
-           <h4>Panaderia</h4> 
+           <h3>Panaderia</h3> 
            <article class="art_tortas">
-            <h5 class="titulo_torta">Chipa</h5>
+            <h4 class="titulo_torta">Chipa</h4>
             <p class="texto_torta">Chipa, un clásico de siempre. ¿Antojo de algo bien rico y con mucho queso? 🧀🔥Un clásico infalible que acompaña cualquier momento, meriendas, cenas o picadas.</p>
             <p class="texto_cierre">Encarga los tuyos, no te quedes con el antojo.😋</p>
-            <h5 class="precio">€15</h5>
+            <h4 class="precio">€15</h4>
             <img class="torta" src="../archivos/chipa2.jpg" alt="Chipa">
            </article>
            <article class="art_tortas">
-            <h5 class="titulo_torta">Pastelitos</h5>
+            <h4 class="titulo_torta">Pastelitos</h4>
             <p class="texto_torta">Crujientes por fuera, suaves por dentro, con dulce de membrillo y bañados en almíbar… como los de las fiestas patrias, pero todo el año. Ideales para el mate, para compartir en familia o para darte ese gusto que sabe a casa.</p>
             <p class="texto_cierre">Encargá los tuyos y llevá un pedacito de tradición en cada bocado 🧉</p>
-            <h5 class="precio">€20</h5>
+            <h4 class="precio">€20</h4>
             <img class="torta" src="../archivos/pastelitos.jpg" alt="Pastelitos">
            </article>
         </section>

@@ -1,0 +1,61 @@
+@use "../generales/variables" as*;
+/* Productos */
+body{
+    main{
+        .titulo_productos{
+            font-family: $fontNav;
+            font-weight: 800;
+            font-style: normal;
+            font-size: 3rem;
+            text-align: center;
+        }
+        section{
+            h3{
+                font-family: $fontNav;
+                font-size: 4rem;
+                margin-left:100px;
+            }
+            .art_tortas{
+                display: grid;
+                grid-template-columns: 30% 50% 20%;
+                grid-template-rows: 10% 60% 20%;
+                grid-template-areas:
+                "torta titulo_torta titulo_torta"
+                "torta texto_torta texto_torta"
+                "torta texto_cierre precio";
+                font-size: 1.5rem;
+                justify-content: space-between;
+                align-items: center;
+                border: 2px solid black;
+                margin: 10px 10px 10px 10px;
+                .titulo_torta{
+                    grid-area: titulo_torta;
+                    font-size: 2.5rem;
+                    text-align: center;
+                    padding-top: 5%;
+                    font-family: "Spectral SC", serif;
+                    font-weight: 600;
+                    font-style: italic;
+                    text-decoration: underline;
+                }
+                .texto_torta{
+                    grid-area: texto_torta;
+                    line-height: 1.5;
+                }
+                .texto_cierre{
+                    grid-area: texto_cierre;
+                }
+                .precio{
+                    @extend .titulo_torta;
+                    grid-area: precio;
+                    font-size: 5rem;
+                }
+                .torta{
+                    width: 100%;
+                    grid-area: torta;
+                    padding: 5%;
+                }
+            }
+        }
+    }
+}

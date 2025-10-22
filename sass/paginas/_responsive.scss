@@ -1,0 +1,102 @@
+/* Responsive */
+/* Mobile */
+@media (max-width: 480px){
+    /* header */
+    body{
+        header{
+            .encabezado{
+                align-items: center;
+                .logo{
+                    width: 100px;
+                    height: auto;
+                }
+                h1{
+                    font-size: 4rem;
+                }
+            }
+            nav{
+                ul{
+                    padding: 0%;
+                }
+            }
+        }
+        main{
+            h2{
+                font-size: 2rem;
+            }
+            #sobre_nosotros{
+                grid-template-areas:
+                "titulo_seccion"
+                "panaderia"
+                "presentacion"
+                "enumeracion"
+                "manga"
+                "despedida";
+                grid-template-columns: 1fr;
+                grid-template-rows: 100px 200px 120px 150px 150px 160px;
+                font-size: 1rem;
+                margin: 20px 20px 0px 30px;
+                .panaderia{
+                    width: 80%;
+                }
+                .manga{
+                    width: 90%;
+                }
+                .despedida{
+                    font-size: 150%;
+                }
+            }
+        }
+    }
+            /*Productos*/
+    body{
+        main{
+            section{
+                .titulo_productos{
+                    text-align:left;
+                }
+                h3{
+                    margin-left: 10px;
+                }
+                .art_tortas{
+                    grid-template-areas:
+                    "titulo_torta"
+                    "torta"
+                    "texto_torta"
+                    "precio";
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 50px 220px 150px 80px;
+                    font-size: 1rem;
+                    justify-items: center;
+                    .texto_cierre{
+                        display: none;
+                    }
+                    .torta{
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+            /* Ubicaciones */
+    body{
+        main{
+            div{
+                .mapa{
+                    margin: 0px;
+                    width:400px;
+                }
+            }
+        }
+    }
+        /* Footer */
+    body{
+        footer{
+            justify-content: space-around;
+            padding: 0%;
+            p{
+                display: none;
+            }
+        };
+    }
+}

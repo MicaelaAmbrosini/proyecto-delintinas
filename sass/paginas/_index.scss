@@ -1,0 +1,53 @@
+@use "../generales/variables"as*;
+
+/* Index */
+
+main{
+    h2{
+        font-size: 3.5rem;
+        color: $marron;
+        font-family: $fontPDos;
+        text-align: center;
+        margin: 0;
+    }
+    #sobre_nosotros{
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+        grid-template-rows: 20% 20% 25% 25%;
+        grid-template-areas:
+        "titulo_seccion titulo_seccion titulo_seccion"
+        "panaderia presentacion presentacion"
+        "panaderia enumeracion enumeracion"
+        "despedida despedida manga";
+        font-size: 1.5rem;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px 50px 0px 50px;
+        .panaderia{
+            width: 100%;
+            grid-area: panaderia;
+        }
+        .titulo_seccion {
+            grid-area: titulo_seccion;
+            justify-self: start;
+        }
+        .presentacion{
+            grid-area: presentacion;
+        }
+        .enumeracion{
+            grid-area: enumeracion;
+        }
+        .despedida{
+            grid-area: despedida;
+            font-family: $fontTitulo;
+            font-size: 230%;
+        }
+        .manga{
+            grid-area: manga;
+            width: 100%;
+        }
+        p{
+            line-height: 1;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+//Variables
+@use "./variables" as*;
+
+/* Estilo Header--------------------------------------*/
+.encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    background-color: $beige;
+    height: auto;
+    .logo{
+        width: 160px;
+        height: 160px;
+    }
+    h1{
+        color: $marron;
+        font-size: 8rem;
+        font-family: $fontTitulo;
+        margin: 0;
+    }
+}
+.barra_nav{
+    background-color:$tiza;
+        .boton_inicio{
+            font-size: 1.5rem;
+            color: $marron;
+            text-decoration: none;
+            font-family: $fontNav;
+        }
+    ul{
+       list-style: none;
+       display: flex;
+       justify-content: space-evenly;
+       position: sticky;
+       li{
+         a{
+          font-size: 1.2rem;
+          color: $marron;
+          text-decoration: none;
+          font-family: $fontNav;
+          }
+        }
+    }
+}

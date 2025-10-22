@@ -1,0 +1,33 @@
+@use "../generales/variables" as*;
+
+/* Ubicaciones */
+
+body{
+    main{
+        div{
+            h3{
+                font-family: $fontNav;
+                font-weight: 800;
+                font-style: normal;
+                font-size: 2.2rem;
+                text-align: center;
+            }
+            h4{
+                font-family: $fontNav;
+                font-size: 4rem;
+                margin-left:100px;
+            }
+            .mapa {
+                margin: 0px 0px 40px 200px;
+            }
+        }
+        .formulario{
+            background-color:$beige ;
+            font-family: $fontNav;
+            font-weight: 600;
+            font-style: italic;
+            font-size: 1rem;
+            padding: 50px;
+        }
+    }
+}

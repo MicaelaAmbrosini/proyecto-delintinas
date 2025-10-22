@@ -1,0 +1,273 @@
+/*Reset*/
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografia  */
+/*Estilo general*/
+p {
+  font-family: "Merriweather", serif;
+  line-height: 0.5;
+}
+
+main {
+  background-image: url(../../archivos/fondo90.png);
+}
+
+/* Estilo Header--------------------------------------*/
+.encabezado {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  background-color: #f7e6d3;
+  height: auto;
+}
+.encabezado .logo {
+  width: 160px;
+  height: 160px;
+}
+.encabezado h1 {
+  color: #553A26;
+  font-size: 8rem;
+  font-family: "Great Vibes", cursive;
+  margin: 0;
+}
+
+.barra_nav {
+  background-color: #c0baba;
+}
+.barra_nav .boton_inicio {
+  font-size: 1.5rem;
+  color: #553A26;
+  text-decoration: none;
+  font-family: "Spectral SC", serif;
+}
+.barra_nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  position: sticky;
+}
+.barra_nav ul li a {
+  font-size: 1.2rem;
+  color: #553A26;
+  text-decoration: none;
+  font-family: "Spectral SC", serif;
+}
+
+/* Index */
+main h2 {
+  font-size: 3.5rem;
+  color: #553A26;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  margin: 0;
+}
+main #sobre_nosotros {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 20% 20% 25% 25%;
+  grid-template-areas: "titulo_seccion titulo_seccion titulo_seccion" "panaderia presentacion presentacion" "panaderia enumeracion enumeracion" "despedida despedida manga";
+  font-size: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 50px 0px 50px;
+}
+main #sobre_nosotros .panaderia {
+  width: 100%;
+  grid-area: panaderia;
+}
+main #sobre_nosotros .titulo_seccion {
+  grid-area: titulo_seccion;
+  justify-self: start;
+}
+main #sobre_nosotros .presentacion {
+  grid-area: presentacion;
+}
+main #sobre_nosotros .enumeracion {
+  grid-area: enumeracion;
+}
+main #sobre_nosotros .despedida {
+  grid-area: despedida;
+  font-family: "Great Vibes", cursive;
+  font-size: 230%;
+}
+main #sobre_nosotros .manga {
+  grid-area: manga;
+  width: 100%;
+}
+main #sobre_nosotros p {
+  line-height: 1;
+}
+
+/* Productos */
+body main .titulo_productos {
+  font-family: "Spectral SC", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 3rem;
+  text-align: center;
+}
+body main section h3 {
+  font-family: "Spectral SC", serif;
+  font-size: 4rem;
+  margin-left: 100px;
+}
+body main section .art_tortas {
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  grid-template-rows: 10% 60% 20%;
+  grid-template-areas: "torta titulo_torta titulo_torta" "torta texto_torta texto_torta" "torta texto_cierre precio";
+  font-size: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  margin: 10px 10px 10px 10px;
+}
+body main section .art_tortas .titulo_torta, body main section .art_tortas .precio {
+  grid-area: titulo_torta;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 5%;
+  font-family: "Spectral SC", serif;
+  font-weight: 600;
+  font-style: italic;
+  text-decoration: underline;
+}
+body main section .art_tortas .texto_torta {
+  grid-area: texto_torta;
+  line-height: 1.5;
+}
+body main section .art_tortas .texto_cierre {
+  grid-area: texto_cierre;
+}
+body main section .art_tortas .precio {
+  grid-area: precio;
+  font-size: 5rem;
+}
+body main section .art_tortas .torta {
+  width: 100%;
+  grid-area: torta;
+  padding: 5%;
+}
+
+/* Ubicaciones */
+body main div h3 {
+  font-family: "Spectral SC", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2.2rem;
+  text-align: center;
+}
+body main div h4 {
+  font-family: "Spectral SC", serif;
+  font-size: 4rem;
+  margin-left: 100px;
+}
+body main div .mapa {
+  margin: 0px 0px 40px 200px;
+}
+body main .formulario {
+  background-color: #f7e6d3;
+  font-family: "Spectral SC", serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1rem;
+  padding: 50px;
+}
+
+footer {
+  background-color: #553A26;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  padding-left: 50px;
+}
+footer p {
+  color: #c0baba;
+  line-height: 1;
+}
+footer a .instagram, footer a .wpp, footer a .mail, footer a .facebook {
+  width: 50px;
+  height: auto;
+  margin: 0px 10px 0px 10px;
+}
+/* Responsive */
+/* Mobile */
+@media (max-width: 480px) {
+  /* header */
+  body header .encabezado {
+    align-items: center;
+  }
+  body header .encabezado .logo {
+    width: 100px;
+    height: auto;
+  }
+  body header .encabezado h1 {
+    font-size: 4rem;
+  }
+  body header nav ul {
+    padding: 0%;
+  }
+  body main h2 {
+    font-size: 2rem;
+  }
+  body main #sobre_nosotros {
+    grid-template-areas: "titulo_seccion" "panaderia" "presentacion" "enumeracion" "manga" "despedida";
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 200px 120px 150px 150px 160px;
+    font-size: 1rem;
+    margin: 20px 20px 0px 30px;
+  }
+  body main #sobre_nosotros .panaderia {
+    width: 80%;
+  }
+  body main #sobre_nosotros .manga {
+    width: 90%;
+  }
+  body main #sobre_nosotros .despedida {
+    font-size: 150%;
+  }
+  /*Productos*/
+  body main section .titulo_productos {
+    text-align: left;
+  }
+  body main section h3 {
+    margin-left: 10px;
+  }
+  body main section .art_tortas {
+    grid-template-areas: "titulo_torta" "torta" "texto_torta" "precio";
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 220px 150px 80px;
+    font-size: 1rem;
+    justify-items: center;
+  }
+  body main section .art_tortas .texto_cierre {
+    display: none;
+  }
+  body main section .art_tortas .torta {
+    width: 70%;
+  }
+  /* Ubicaciones */
+  body main div .mapa {
+    margin: 0px;
+    width: 400px;
+  }
+  /* Footer */
+  body footer {
+    justify-content: space-around;
+    padding: 0%;
+  }
+  body footer p {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
