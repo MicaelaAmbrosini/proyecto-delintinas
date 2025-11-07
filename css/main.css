@@ -156,6 +156,7 @@ body main section .art_tortas .texto_cierre {
 body main section .art_tortas .precio {
   grid-area: precio;
   font-size: 5rem;
+  padding-bottom: 5%;
 }
 body main section .art_tortas .torta {
   width: 100%;
@@ -177,7 +178,8 @@ body main div h4 {
   margin-left: 100px;
 }
 body main div .mapa {
-  margin: 0px 0px 40px 200px;
+  display: block;
+  margin: 0 auto;
 }
 body main .formulario {
   background-color: #f7e6d3;
@@ -264,9 +266,12 @@ footer a .instagram, footer a .wpp, footer a .mail, footer a .facebook {
     width: 70%;
   }
   /* Ubicaciones */
+  body main div h4 {
+    margin-left: 5px;
+  }
   body main div .mapa {
     margin: 0px;
-    width: 400px;
+    width: auto;
   }
   /* Footer */
   body footer {
@@ -275,6 +280,63 @@ footer a .instagram, footer a .wpp, footer a .mail, footer a .facebook {
   }
   body footer p {
     display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 978px) {
+  /* header */
+  body header .encabezado {
+    align-items: center;
+  }
+  body header .encabezado .logo {
+    width: 150px;
+    height: auto;
+  }
+  body header .encabezado h1 {
+    font-size: 5rem;
+  }
+  body header nav ul {
+    padding: 0%;
+  }
+  body main h2 {
+    font-size: 1.8rem;
+  }
+  body main #sobre_nosotros {
+    grid-template-areas: "titulo_seccion" "panaderia" "presentacion" "enumeracion" "manga" "despedida";
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 280px 180px 180px 250px 180px;
+    font-size: 1.3rem;
+    margin: 20px 20px 10px 30px;
+  }
+  body main #sobre_nosotros .panaderia {
+    width: 60%;
+  }
+  body main #sobre_nosotros .manga {
+    width: 60%;
+  }
+  body main #sobre_nosotros .despedida {
+    font-size: 150%;
+  }
+  /*Productos*/
+  body main section h3 {
+    margin-left: 10px;
+  }
+  body main section .art_tortas {
+    grid-template-areas: "titulo_torta" "torta" "texto_torta" "precio";
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 220px 120px 100px;
+    font-size: 1rem;
+    justify-items: center;
+  }
+  body main section .art_tortas .texto_cierre {
+    display: none;
+  }
+  body main section .art_tortas .torta {
+    width: 50%;
+  }
+  /* Footer */
+  body footer {
+    justify-content: space-around;
+    padding: 1%;
   }
 }
 
